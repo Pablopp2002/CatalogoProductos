@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo-de-Productos</title>
+    <link type="text/css" rel="stylesheet" href="diseño.css" media="screen">
+    <script type="text/javascript" src="formulario.js"></script>
+</head>
+<body>
+    <body>
+		<div>
+			<div id="shop">
+				<ul>
+					<li>
+						<a href="#" onclick="addToCart(this);">
+							<img  src="imagenes/grafica.webp" height="100" width="100"/><br />
+							<span class="price">1´600.000</span>COP<br />
+                                Tarjeta grafica <br/>
+                                <div class="btorinter-div">
+                                    <button onclick="selectDelete()" class="btdelete">Añadir al carrito</button>
+                                </div>
+						</a>
+					</li>
+					<li>
+						<a href="#" onclick="addToCart(this);">
+							<img  src="imagenes/monitor2.jpg" height="100" width="100"/><br />
+							<span class="price">800.000</span>COP<br />
+                                Monitor 144Hz <br/>
+                                <div class="btorinter-div">
+                                    <button onclick="selectDelete()" class="btdelete">Añadir al carrito</button>
+                                </div>
+						</a>
+					</li>
+					<li>
+						<a href="#" onclick="addToCart(this);">
+							<img src="imagenes/RAM.jpeg" height="100" width="100"/><br />
+							<span class="price">360.000</span>COP<br />
+                                RAM 16Gb <br />
+                                <div class="btorinter-div">
+                                    <button onclick="selectDelete()" class="btdelete">Añadir al carrito</button>
+                                </div>
+						</a>
+					</li>
+					<li>
+						<a href="#" onclick="addToCart(this);">
+							<img src="imagenes/discodurp.jpg" height="100" width="100"/><br />
+							<span class="price">280.000</span>COP<br />
+                                Disco duro ssd
+                                <div class="btorinter-div">
+                                    <button onclick="selectDelete()" class="btdelete">Añadir al carrito</button>
+                                </div>
+						</a>
+					</li>
+					<li>
+						<a href="#" onclick="addToCart(this);">
+							<img src="imagenes/procesador.jpg" height="100" width="100"/><br />
+							<span class="price">1´600.000</span>COP<br />
+                                Procesador i10
+                                <div class="btorinter-div">
+                                    <button onclick="selectDelete()" class="btdelete">Añadir al carrito</button>
+                                </div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="info-table">
+				<h1>Carrito de compras</h1>
+				<table id="mytable"  width="1200" align="center">
+					<tr>
+						<th><input type="checkbox" id="allCheck" onclick="selectAll()"/>seleccionar todo</th>
+						<th>Tienda Tecnología</th>
+						<th>Gana puntos</th>
+						<th>Precio unitario  (COL)</th>
+						<th>Cantidad</th>
+						<th>Subtotal (COL)</th>
+						<th>operando</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox"  class="selectOne" /></td>
+						<td class="imgbackground"><img src="imagenes/procesador.jpg" height="100" width="100"/></td>
+						<td class="integral">200</td>
+						<td>1´600.000</td>
+						<td>
+							<button onclick="reduce(this)">-</button>
+							<input type="text" size="1" readonly="true" value="1"/>
+							<button onclick="plus(this)">+</button>
+						</td>
+						<td class="shopCount">0</td>
+						<td><a href="#" class="delete" onclick="deleteChild(this)">Eliminar</a></td>
+					</tr>
+					
+				</table>
+			</div>
+			<div id="info-input">
+				<div class="btorinter-div">
+					<button onclick="selectDelete()" class="btdelete">Eliminar seleccionado</button>
+				</div>
+				
+			</div>
+		</div>
+</body>
+
+</html>
